@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DestroyOutOfBoundsX : MonoBehaviour
 {
+    // declare & instantiate float variables for object boundaries
     private float leftLimit = -40;
     private float bottomLimit = -5;
 
@@ -15,6 +16,7 @@ public class DestroyOutOfBoundsX : MonoBehaviour
         {
             Destroy(gameObject);
         } 
+
         // Destroy balls if y position is less than bottomLimit
         else if (transform.position.y < bottomLimit)
         {
